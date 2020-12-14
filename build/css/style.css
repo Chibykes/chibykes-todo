@@ -1,0 +1,78 @@
+@font-face{
+    src: url('Montserrat.ttf');
+    font-family: 'Montserrat';
+}
+.montserrat{
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    font-size: 13px;
+}
+@keyframes bump{
+    0% { transform: translateY(0px) rotateZ(0deg); }
+    25% { transform: translateY(-.5px) rotateZ(-10deg); }
+    50% { transform: translateY(-1px) rotateZ(0deg); }
+    75% { transform: translateY(-.5px) rotateZ(+10deg); }
+    100% { transform: translateY(0px) rotateZ(0deg); }
+}
+
+.todo{
+    visibility: visible;
+    transition: visibility .5s;
+}
+
+.text-disabled{
+    color: gray;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+span{
+    text-decoration-color: #17a2b8!important;
+}
+
+i.fa:hover{
+    animation: bump infinite .3s linear;
+}
+
+form.add input{
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 2px solid #17a2b8;
+    text-align: center;
+}
+
+form.add input:focus{
+    outline: none;
+}
+
+form.add button{
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+    color: var(--blue);
+    outline: none;
+    background: none;
+    border: 2px solid;
+    border-color: #17a2b8!important;
+    border-radius: 5px;
+    padding: .3rem;
+    transition: .5s
+}
+
+form.add button:hover{
+    color: #fff;
+    background: #17a2b8!important;
+    border-color: #17a2b8!important;
+}
+
+form.add button:active{
+    color: #fff;
+    background: #17a2b8!important;
+    border-color: #17a2b8!important;
+    transform: translate(2px, 2px)
+}
